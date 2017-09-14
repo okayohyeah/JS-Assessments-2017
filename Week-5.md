@@ -1,17 +1,19 @@
-### Javascript Course Assessment
+### Javascript Course Assessment - Kathy Oh
 
 ## Week 5 Assessment
 
-Try your best to answer each question on your own before looking up the answer online. Once you're done writing your first answer, you can google the question and write the best answer you find.
-
 #### 1. Comment this code from an express server to explain what each part is doing.
 
-app.get('/', function (request, response) {
- response.send('Hello World!');
+app.get('/', function (request, response) {         //a call back function invoked when request 
+                                                    w/the path (route or root URL)
+ response.send('Hello World!');                    //calls the send method on the response & 
+                                                    returns 'Hello World!"
 });
 
-app.listen(3000, function () {
- console.log('Example app listening on port 3000!');
+app.listen(3000, function () {                     //starts server on port 3000
+ console.log('Example app listening on port 3000!');  //prints out 'Example app listening on 
+                                                       port 3000!' to console
+
 });
 
 
